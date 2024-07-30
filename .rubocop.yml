@@ -24,3 +24,5 @@ Naming/MethodParameterName:
   MinNameLength: 2
 Layout/LineLength:
   Max: 120
+Rails/I18nLocaleTexts:
+  Enabled: false
