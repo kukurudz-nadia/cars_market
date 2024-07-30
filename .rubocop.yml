@@ -1,0 +1,26 @@
+require:
+  - rubocop-rails
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.3.0
+  Exclude:
+    - vendor/bundle/**/*
+    - '**/db/schema.rb'
+    - '**/db/**/*'
+    - 'config/**/*'
+    - 'bin/*'
+    - 'config.ru'
+    - 'Rakefile'
+    - 'Gemfile'
+    - 'Gemfile.lock'
+    - '**/app/lib/**/*'
+
+Style/Documentation:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: true
+Naming/MethodParameterName:
+  MinNameLength: 2
+Layout/LineLength:
+  Max: 120
